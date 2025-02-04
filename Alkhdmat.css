@@ -1,0 +1,397 @@
+:root {
+    --color-blue-main: rgb(23, 107, 224);
+    --color-red-header-mark: #b61a1a;
+    --color-warning: #FFD43B;
+    --color-dark: #1d1e20;
+    --color-success-light: #def4f0;
+}
+
+body {
+    font-family: "cairo", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    height: normal;
+    direction: rtl;
+    margin: 0;
+    padding-top: 80px;
+}
+
+a {
+    line-height: 1.5;
+    padding: .5rem 1rem;
+    white-space: nowrap;
+}
+
+.movment {
+    opacity: 0;
+    animation: moveUp 1.3s ease-out forwards;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.navbar-top {
+    background-color: var(--color-red-header-mark);
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1100;
+    color: #fff;
+    font-weight: 800;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar-custom {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-custom .nav-link {
+    color: black;
+    font-size: 22px;
+    font-weight: 900;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+.navbar-custom .nav-item:first-child .nav-link {
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+.navbar-custom .nav-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1199.98px) {
+    .navbar-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+}
+
+/* End Header */
+/* Start Services */
+.services {
+    background-color: var(--color-success-light);
+    padding: 50px 0;
+}
+
+.services h3 {
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.services .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.services .container img {
+    border-radius: 5%;
+    max-width: 100%;
+    gap: 0;
+}
+
+.services .container .box {
+    direction: ltr;
+}
+
+.services .container .box h4 {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.services .container .box p {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0 1rem;
+}
+
+/* End Services */
+/* Start Landing */
+.landing {
+    direction: ltr;
+}
+
+.pics-side img {
+    max-height: 100%;
+    border-radius: 5%;
+}
+
+.text-box {
+    direction: ltr;
+    margin: 0;
+    margin-top: 8%;
+    margin-left: 0%;
+}
+
+.text-box h3 {
+    font-size: 45px;
+    margin-bottom: 5%;
+}
+
+.text-box p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: .5rem .5em;
+    white-space: wrap;
+}
+
+.text-box a button {
+    border-radius: 25px;
+    font-size: 15px;
+    padding: 3% 18%;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* End Landing */
+/* Start Signing */
+.signing {
+    direction: ltr;
+}
+
+.signing h2 {
+    font-size: 50px;
+    line-height: 1.5;
+    padding: .5rem 25rem;
+}
+
+.contact-container {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form-box {
+    background: #d4f0f5;
+    padding: 30px;
+    border-radius: 10px 0 0 10px;
+    width: 100%;
+}
+
+.form-control {
+    width: 480px;
+    height: 60px;
+}
+
+.submit-btn {
+    background-color: #00755E;
+    color: white;
+    border-radius: 50px;
+    width: 150px;
+    height: 55px;
+}
+
+.image-box img {
+    background: url('https://source.unsplash.com/600x400/?tree,blue-sky') no-repeat center center;
+    background-size: cover;
+    min-height: 300px;
+    border-radius: 0 10px 10px 0;
+    width: 80%;
+    margin-top: 10%;
+}
+
+@media (max-width: 768px) {
+    .signing img {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        padding: 20px;
+    }
+
+    .signing .text-box h2 {
+        font-size: 22px !important;
+        direction: rtl !important;
+        white-space: nowrap;
+    }
+
+    .signing p {
+        white-space: wrap;
+        font-size: 18px;
+    }
+
+}
+
+/* End Signing */
+/* Start Footer */
+.footer {
+    overflow: hidden;
+    background-color: var(--color-blue-main);
+}
+
+.footer h4 {
+    color: black;
+    font-weight: 800;
+    padding: 20px;
+    margin-bottom: 0;
+    margin-left: 75%;
+    line-height: 1.5;
+    padding: .5rem 1rem;
+    white-space: nowrap;
+}
+
+.footer p {
+    color: var(--color-warning);
+    font-size: 27px;
+    font-weight: 900;
+    margin-left: 14%;
+    line-height: 1.5;
+    padding: .5rem 1rem;
+    white-space: nowrap;
+
+}
+
+.footer .text-2 h4 {
+    color: black;
+    font-weight: 800;
+    padding: 20px;
+    margin-bottom: 0;
+    margin-left: 70%;
+    line-height: 1.5;
+    padding: .5rem 1rem;
+    white-space: nowrap;
+}
+
+.footer .text-2 p {
+    text-decoration: underline;
+    margin-left: 65%;
+
+}
+
+.footer .map {
+    margin-left: 30px;
+    margin-top: 30px;
+    max-width: 100%;
+    max-height: 50%;
+}
+
+@media (max-width: 1199.98px) {
+    .footer img {
+        max-width: 70% !important;
+        margin: auto !important;
+    }
+
+    .footer p {
+        width: 70%;
+        font-size: 20px;
+    }
+
+    .footer svg {
+        width: 25px !important;
+        margin: 12px;
+        display: flex;
+        flex-direction: row;
+        margin: 0 !important;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .footer img {
+        max-width: 70% !important;
+        margin: auto !important;
+    }
+
+    .footer p {
+        width: 70%;
+        font-size: 20px;
+        white-space: wrap;
+    }
+
+    .footer svg {
+        width: 25px !important;
+        margin: 12px;
+        display: flex;
+        flex-direction: row;
+        margin: 0 !important;
+    }
+
+    .footer .map {
+        margin: 15px;
+    }
+
+    .footer img {
+        max-width: 80%;
+        margin: auto;
+        margin-right: 40px;
+    }
+
+    .footer .map iframe {
+        margin: auto;
+        max-width: 100%;
+    }
+}
+
+.footer svg {
+    width: 50px;
+    margin: 28px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer svg:hover {
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer span {
+    font-weight: 900;
+    color: black;
+    direction: rtl;
+}
+
+/* End Footer */
+/* Start whatsapp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-button img {
+    width: 32px;
+    height: 32px;
+}
+
+/*  */

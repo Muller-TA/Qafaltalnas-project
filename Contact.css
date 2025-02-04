@@ -1,0 +1,214 @@
+:root {
+    --color-blue-main: rgb(23, 107, 224);
+    --color-red-header-mark: #b61a1a;
+    --color-warning: #FFD43B;
+    --color-dark: #1d1e20;
+
+}
+
+body {
+    font-family: "cairo", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    height: normal;
+    direction: rtl;
+    margin: 0;
+    padding-top: 80px;
+}
+
+a {
+    line-height: 1.5;
+    padding: .5rem 1rem;
+    white-space: nowrap;
+}
+
+/* الحاويات */
+.movment {
+    opacity: 0;
+    animation: moveUp 1.3s ease-out forwards;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Start Header */
+.navbar-top {
+    background-color: var(--color-red-header-mark);
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1100;
+    color: #fff;
+    font-weight: 800;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar-custom {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-custom .nav-link {
+    color: black;
+    font-size: 22px;
+    font-weight: 900;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+.navbar-custom .nav-item:first-child .nav-link {
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+.navbar-custom .nav-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1199.98px) {
+    .navbar-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+}
+
+/* End Header */
+/* Start Info */
+.Info {
+    background-color: var(--color-blue-main);
+}
+
+.Info h3 {
+    color: #ffd700;
+    font-size: 40px;
+    font-weight: 900;
+    padding: .5rem 1rem;
+}
+
+
+
+.Info p {
+    font-size: 20px;
+    padding: .5rem 1rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: underline;
+}
+
+.Info .text p {
+    font-size: 18px;
+    padding: .5rem 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+
+.Info .white-click {
+    font-size: 25px;
+    padding: .5rem 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: white;
+}
+
+.Info h4 {
+    color: #ffd700;
+    font-size: 22px;
+    font-weight: 900;
+    padding: .5rem 1rem;
+}
+
+.Info .whatsupp a {
+    color: #3ce661;
+    font-weight: 600;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 0;
+    display: block;
+}
+
+.Info h5 {
+    font-size: 22px;
+    padding: .5rem 1rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+/* End Info */
+/* Start Map */
+@media (max-width: 1199.98px) {
+    .map iframe {
+        margin: auto;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {}
+
+/* End Map */
+/* Start footer */
+.footer {
+    background-color: var(--color-blue-main);
+    color: white;
+    padding: 15px 0;
+    font-size: 25px;
+}
+
+.footer a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer svg {
+    width: 28px;
+    height: 28px;
+    fill: white;
+    transition: transform 0.2s ease, fill 0.2s ease;
+}
+
+.footer a:hover svg {
+    fill: var(--color-dark);
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-button img {
+    width: 32px;
+    height: 32px;
+}
+
+/* End footer */
